@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Visitors Information</title>
+</head>
+<body>
+<h1>Visitors Information</h1>
+<hr>
+<form method="post">
+<div>
+<table border="1" cellpadding="10">
+<!-- Email Address -->
+<tr>
+<td><label for="email">Email Address:</label></td>
+<td><input type="email" id="email" name="email" required> </td>
+</tr>
+<!-- User's Interest -->
+<tr>
+<td>User’s interest (web for):</td>
+<td>
+<input type="checkbox" id="research" name="interest" value="research">
+<label for="research">Research</label><br>
+<input type="checkbox" id="purchase" name="interest" value="purchase">
+<label for="purchase">Purchase</label>
+</td>
+</tr>
+<!-- Occupation Dropdown -->
+<tr>
+<td><label for="occupation">Occupation:</label></td>
+<td>
+<select id="occupation" name="occupation" required>
+<option value="" selected disabled>(select one)</option>
+<option value="student">Student</option>
+<option value="teacher">Teacher</option>
+<option value="developer">Developer</option>
+<option value="other">Other</option>
+</select>
+</td>
+</tr>
+<!-- Junk Emails Radio Buttons -->
+<tr>
+<td>Want us to send you junk emails?</td>
+<td>
+<input type="radio" id="absolutely" name="junk_email" value="absolutely" required>
+<label for="absolutely">Absolutely</label><br>
+<input type="radio" id="noway" name="junk_email" value="no_way_man">
+<label for="noway">No way man</label>
+</td>
+</tr>
+<!-- Submit and Reset -->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
