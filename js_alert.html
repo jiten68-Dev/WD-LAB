@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Document</title>
+    </head>
+    <body>
+       <button oncilck="runALL()">Run</buttom>
+        <script>
+            function runALL(){
+                todayDate();
+                alertName();
+                calculateSum();
+            }
+            function todayDate(){
+              let today = new Date();
+              alert(today.toDateString);
+            }
+            function alertName(){
+                let nm = prompt("Enter your name");
+                alert("Hello "+nm);
+            }
+            function calculateSum(){
+                let n1 = prompt("enter number 1:");
+                let n2 = prompt("enter number 2:");
+                let sum = Number(n1)+Number(n2);
+                alert("The sum is  " +sum)
+            }
+        </script>
+    </body>
+</html>
